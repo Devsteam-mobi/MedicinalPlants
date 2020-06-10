@@ -1,28 +1,36 @@
 {
   "expo": {
-    "name": "MedicinalPlants",
+    "name": "Medicinal Plants",
     "slug": "MedicinalPlants",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": ["js", "jsx", "svg", "ts", "tsx"]
+    },
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "androidStatusBar": {
+      "barStyle": "light-content",
+      "backgroundColor": "#000000",
+      "hidden": false,
+      "translucent": false
+    },
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "mobi.devsteam.medicinalplants",
+      "versionCode": 1,
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=mobi.devsteam.medicinalplants",
+      "permissions": []
+    },
     "ios": {
-      "supportsTablet": true
+      "appStoreUrl": "https://apps.apple.com/ua/app/лекарственные-растения-мира/id1516231289",
+      "bundleIdentifier": "mobi.devsteam.medicinalplants",
+      "buildNumber": "1",
+      "supportsTablet": false
     }
   }
 }
